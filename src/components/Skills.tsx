@@ -1,7 +1,7 @@
 import styles from './Skills.module.css'
 
 const skillGroups = [
-  { category: 'DESIGN TOOLS', icon: '◈', skills: ['Adobe Photoshop', 'Adobe Illustrator', 'Adobe Premiere Pro', 'Gimp', 'Inkscape', 'Figma'] },
+  { category: 'DESIGN TOOLS', icon: '◈', skills: ['Adobe Photoshop', 'Adobe Illustrator', 'Adobe Premiere Pro', 'Gimp', 'Inkscape'] },
   { category: '3D & MOTION', icon: '◉', skills: ['Blender 3D', 'ZBrush'] },
   { category: 'WEB DEV', icon: '◎', skills: ['HTML5', 'CSS3/SCSS', 'JavaScript', 'Vue.js / React.js', 'Next.js'] },
   { category: 'LANGUAGES', icon: '◆', skills: ['C#', 'Python', 'Android Studio'] },
