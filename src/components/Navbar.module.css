@@ -1,0 +1,135 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  transition: background 0.3s, padding 0.3s;
+}
+
+.scrolled {
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1rem 3rem;
+  border-bottom: 1px solid rgba(245, 195, 0, 0.2);
+}
+
+.logo {
+  text-decoration: none;
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.logoText {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.8rem;
+  color: #F5C300;
+  letter-spacing: 4px;
+}
+
+.logoDot {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+}
+
+.link {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #888880;
+  text-decoration: none;
+  transition: color 0.2s;
+  position: relative;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #F5C300;
+  transition: width 0.3s;
+}
+
+.link:hover {
+  color: #F5C300;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.burgerLine, .burgerLineOpen, .burgerLineOpen2, .burgerLineOpen3 {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #F5C300;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.burgerLineOpen {
+  transform: translateY(7px) rotate(45deg);
+}
+.burgerLineOpen2 {
+  opacity: 0;
+}
+.burgerLineOpen3 {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 1.2rem 1.5rem;
+  }
+  .scrolled {
+    padding: 1rem 1.5rem;
+  }
+  .burger {
+    display: flex;
+  }
+  .links {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 10, 10, 0.98);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .links.open {
+    display: flex;
+  }
+  .link {
+    font-size: 1rem;
+    letter-spacing: 4px;
+  }
+}

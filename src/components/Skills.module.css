@@ -1,0 +1,180 @@
+.skills {
+  background: #111111;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.accentPanel {
+  width: 80px;
+  background: #F5C300;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.panelText {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.1rem;
+  letter-spacing: 6px;
+  color: #0A0A0A;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+}
+
+.inner {
+  flex: 1;
+  padding: 8rem 3rem 8rem 4rem;
+  max-width: 1200px;
+}
+
+.header {
+  margin-bottom: 4rem;
+}
+
+.sectionLabel {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  color: #F5C300;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.sectionTitle {
+  font-family: 'Bebas Neue', cursive;
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 0.9;
+  color: #E8E8E0;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.outline {
+  -webkit-text-stroke: 2px #F5C300;
+  color: transparent;
+}
+
+.sectionSub {
+  font-size: 0.9rem;
+  color: #888880;
+  max-width: 400px;
+}
+
+.groupsWrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem 3rem;
+}
+
+.group {
+  border-top: 2px solid #F5C300;
+  padding-top: 1.5rem;
+}
+
+.groupHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.groupIcon {
+  color: #F5C300;
+  font-size: 1rem;
+}
+
+.groupName {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  color: #F5C300;
+  text-transform: uppercase;
+}
+
+.skillList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.skillItem {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.skillItem::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0;
+  height: 1px;
+  background: #F5C300;
+  transition: width 0.4s ease;
+}
+
+.skillItem:hover::after {
+  width: 100%;
+}
+
+.skillBullet {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.7rem;
+  color: #F5C300;
+  flex-shrink: 0;
+}
+
+.skillName {
+  font-size: 0.875rem;
+  color: #C8C8C0;
+  transition: color 0.2s;
+  flex: 1;
+}
+
+.skillItem:hover .skillName {
+  color: #E8E8E0;
+}
+
+.skillDot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #2A2A2A;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+
+.skillItem:hover .skillDot {
+  background: #F5C300;
+}
+
+@media (max-width: 768px) {
+  .accentPanel {
+    width: 40px;
+  }
+  .panelText {
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+  }
+  .inner {
+    padding: 6rem 1.5rem 6rem 2rem;
+  }
+  .groupsWrap {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .groupsWrap {
+    grid-template-columns: 1fr;
+  }
+}

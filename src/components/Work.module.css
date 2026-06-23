@@ -1,0 +1,343 @@
+.work {
+  background: #0A0A0A;
+  padding: 8rem 3rem 6rem;
+  position: relative;
+}
+
+.work::before {
+  content: 'WORK';
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 10rem;
+  color: #1A1A1A;
+  pointer-events: none;
+  user-select: none;
+  line-height: 1;
+}
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+}
+
+.sectionLabel {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  color: #F5C300;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.sectionTitle {
+  font-family: 'Bebas Neue', cursive;
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 0.9;
+  color: #E8E8E0;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.outline {
+  -webkit-text-stroke: 2px #F5C300;
+  color: transparent;
+}
+
+.sectionSub {
+  font-size: 0.9rem;
+  color: #888880;
+}
+
+/* System tabs */
+.sysTabs {
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  position: relative;
+}
+
+.sysTab {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  color: #444;
+  background: none;
+  border: 1px solid #1A1A1A;
+  border-bottom: none;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s, border-color 0.2s;
+  position: relative;
+  z-index: 1;
+}
+
+.sysPrefix {
+  color: #2A2A2A;
+  transition: color 0.2s;
+}
+
+.sysTab:hover {
+  color: #888880;
+  border-color: #2A2A2A;
+}
+
+.sysTab:hover .sysPrefix {
+  color: #555;
+}
+
+.sysTabActive {
+  color: #F5C300 !important;
+  background: #0F0F00 !important;
+  border-color: #F5C300 !important;
+  border-bottom: 1px solid #0F0F00 !important;
+}
+
+.sysTabActive .sysPrefix {
+  color: #888830 !important;
+}
+
+.sysLine {
+  flex: 1;
+  height: 1px;
+  background: #F5C300;
+  margin-bottom: -1px;
+  opacity: 0.4;
+}
+
+/* Table */
+.tableWrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #2A2A2A;
+  border-top: 1px solid rgba(245,195,0,0.3);
+}
+
+.colHead {
+  display: grid;
+  gap: 12px;
+  padding: 10px 16px;
+  border-bottom: 1px solid #1A1A1A;
+  background: #0D0D0D;
+}
+
+.colHeadWeb {
+  grid-template-columns: 40px 1fr 60px 120px 80px;
+}
+
+.colHeadDesign {
+  grid-template-columns: 40px 1fr 90px 60px 120px;
+}
+
+.ch {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  color: #2A2A2A;
+  text-transform: uppercase;
+}
+
+.row {
+  display: grid;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #111;
+  cursor: pointer;
+  transition: background 0.12s;
+  align-items: center;
+}
+
+.rowWeb {
+  grid-template-columns: 40px 1fr 60px 120px 80px;
+}
+
+.rowDesign {
+  grid-template-columns: 40px 1fr 90px 60px 120px;
+}
+
+.row:hover {
+  background: #141414;
+}
+
+.rowActive {
+  background: #0F0F00 !important;
+  border-bottom-color: transparent !important;
+}
+
+.rnum {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.7rem;
+  color: #333;
+  transition: color 0.15s;
+}
+
+.rowActive .rnum {
+  color: #F5C300;
+}
+
+.rname {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.82rem;
+  letter-spacing: 1px;
+  color: #C8C8C0;
+  transition: color 0.15s;
+}
+
+.rowActive .rname {
+  color: #F5C300;
+}
+
+.rtag {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  color: #0A0A0A;
+  background: #444;
+  padding: 3px 8px;
+  display: inline-block;
+  transition: background 0.15s;
+}
+
+.rowActive .rtag {
+  background: #F5C300;
+  color: #0A0A0A;
+}
+
+.ryear {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.7rem;
+  color: #444;
+}
+
+.rcountry {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.7rem;
+  color: #444;
+}
+
+.rlink {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  color: #555;
+  border: 1px solid #222;
+  padding: 4px 10px;
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.rlink:hover {
+  color: #F5C300;
+  border-color: #F5C300;
+}
+
+/* Expanded description row */
+.descRow {
+  background: #0F0F00;
+  padding: 0 16px 16px 68px;
+  border-bottom: 1px solid #F5C300;
+}
+
+.descText {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.75rem;
+  color: #888;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+  border-left: 2px solid #F5C300;
+  padding-left: 14px;
+}
+
+/* Sub filters for design tab */
+.subFilters {
+  max-width: 1200px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.subFilter {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  color: #555;
+  background: none;
+  border: 1px solid #1A1A1A;
+  padding: 5px 14px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.subFilter:hover {
+  color: #F5C300;
+  border-color: #F5C300;
+}
+
+.subFilterActive {
+  background: #F5C300 !important;
+  color: #0A0A0A !important;
+  border-color: #F5C300 !important;
+}
+
+/* Terminal footer */
+.termFooter {
+  max-width: 1200px;
+  margin: 1.5rem auto 0;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: #2A2A2A;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.prompt {
+  color: #F5C300;
+}
+
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 13px;
+  background: #F5C300;
+  animation: blink 1s step-end infinite;
+  vertical-align: middle;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+@media (max-width: 768px) {
+  .work {
+    padding: 6rem 1.5rem 4rem;
+  }
+  .work::before {
+    font-size: 5rem;
+  }
+  .colHeadWeb,
+  .rowWeb {
+    grid-template-columns: 32px 1fr 55px 70px;
+  }
+  .colHeadWeb span:nth-child(4),
+  .rowWeb span:nth-child(4) {
+    display: none;
+  }
+  .colHeadDesign,
+  .rowDesign {
+    grid-template-columns: 32px 1fr 70px 55px;
+  }
+  .colHeadDesign span:nth-child(5),
+  .rowDesign span:nth-child(5) {
+    display: none;
+  }
+  .descRow {
+    padding-left: 44px;
+  }
+}

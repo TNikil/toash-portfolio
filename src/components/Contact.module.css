@@ -1,0 +1,270 @@
+.contact {
+  background: #0A0A0A;
+  border-top: 1px solid #2A2A2A;
+  position: relative;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8rem 3rem 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+
+.sectionLabel {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  color: #F5C300;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.sectionTitle {
+  font-family: 'Bebas Neue', cursive;
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 0.9;
+  color: #E8E8E0;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+}
+
+.outline {
+  -webkit-text-stroke: 2px #F5C300;
+  color: transparent;
+}
+
+.sub {
+  font-size: 0.9rem;
+  color: #888880;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+
+.contactLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.contactRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: #888880;
+  text-decoration: none;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid #1A1A1A;
+  transition: color 0.2s, border-color 0.2s, padding-left 0.2s;
+}
+
+.contactRow:hover {
+  color: #F5C300;
+  border-color: #F5C300;
+  padding-left: 0.5rem;
+}
+
+.contactIcon {
+  color: #F5C300;
+  font-size: 0.9rem;
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  color: #F5C300;
+}
+
+.input, .textarea {
+  background: #111111;
+  border: 1px solid #2A2A2A;
+  color: #E8E8E0;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.85rem;
+  padding: 0.85rem 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+  resize: none;
+}
+
+.input::placeholder, .textarea::placeholder {
+  color: #333;
+}
+
+.input:focus, .textarea:focus {
+  border-color: #F5C300;
+}
+
+.submitBtn {
+  background: #F5C300;
+  color: #0A0A0A;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.submitBtn:hover {
+  background: #FFD700;
+}
+
+.submitBtn:active {
+  transform: scale(0.98);
+}
+
+/* Success */
+.successMsg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 300px;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.successIcon {
+  font-size: 3rem;
+  color: #F5C300;
+}
+
+.successMsg p {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.9rem;
+  color: #888880;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid #1A1A1A;
+  padding: 2rem 3rem;
+}
+
+.footerInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footerLogo {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  color: #F5C300;
+}
+
+.footerLogo span {
+  color: #E8E8E0;
+}
+
+.footerCopy {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  color: #444;
+}
+
+.footerMono {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  color: #2A2A2A;
+}
+
+/* Floating WhatsApp bubble */
+.waFloat {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #0A0A0A;
+  border: 1px solid #F5C300;
+  color: #F5C300;
+  text-decoration: none;
+  padding: 12px 18px 12px 14px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  transition: max-width 0.3s ease, background 0.2s, transform 0.2s;
+  overflow: hidden;
+  max-width: 50px;
+  white-space: nowrap;
+}
+
+.waFloat:hover {
+  max-width: 200px;
+  background: #0F0F00;
+  transform: translateY(-2px);
+}
+
+.waFloatIcon {
+  color: #25D366;
+  flex-shrink: 0;
+}
+
+.waFloatLabel {
+  opacity: 0;
+  transition: opacity 0.15s 0.1s;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+}
+
+.waFloat:hover .waFloatLabel {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr;
+    padding: 6rem 1.5rem 4rem;
+    gap: 3rem;
+  }
+  .footer {
+    padding: 1.5rem;
+  }
+  .footerInner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .waFloat {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+}
