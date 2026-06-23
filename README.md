@@ -1,43 +1,29 @@
-# TOASH Portfolio
+This is a Next.js project bootstrapped with create-next-app.
 
-A cyberpunk-themed Next.js portfolio website inspired by the samurai warrior aesthetic.
+Getting Started
+First, run the development server:
 
-## Tech Stack
-- **Next.js 14** (App Router)
-- **TypeScript**
-- **CSS Modules**
-- Google Fonts: Bebas Neue, Inter, Share Tech Mono
-
-## Getting Started
-
-```bash
-# Install dependencies
-npm install
-
-# Run development server
 npm run dev
-```
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+Open http://localhost:3000 with your browser to see the result.
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+You can start editing the page by modifying app/page.tsx. The page auto-updates as you edit the file.
 
-## Build for Production
+This project uses next/font to automatically optimize and load Geist, a new font family for Vercel.
 
-```bash
-npm run build
-```
+Learn More
+To learn more about Next.js, take a look at the following resources:
 
-This outputs a static site to the `out/` folder (configured for static export).
+Next.js Documentation - learn about Next.js features and API.
+Learn Next.js - an interactive Next.js tutorial.
+You can check out the Next.js GitHub repository - your feedback and contributions are welcome!
 
-## Customization
+Deploy on Vercel
+The easiest way to deploy your Next.js app is to use the Vercel Platform from the creators of Next.js.
 
-- **Hero**: Edit `src/components/Hero.tsx` — update your taglines and CTA links
-- **Work**: Edit `src/components/Work.tsx` — update the `projects` array with your real projects
-- **Skills**: Edit `src/components/Skills.tsx` — already populated with your skill list
-- **Contact**: Edit `src/components/Contact.tsx` — update email, GitHub, LinkedIn links
-- **Samurai image**: Replace `public/samurai.png` with any updated character image
-
-## Color Theme
-- Yellow accent: `#F5C300`
-- Background: `#0A0A0A`
-- Surface: `#111111`
-- Text: `#E8E8E0`
+Check out our Next.js deployment documentation for more details.
